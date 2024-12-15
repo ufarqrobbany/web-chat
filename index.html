@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Chat Client</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>Web Chat Client</h1>
+    <div class="connect">
+        <input type="text" id="username-input" placeholder="Username">
+        <button onclick="connect()" id="connect-button" disabled>Connect</button>
+        <button onclick="disconnect()" id="disconnect-button">Disconnect</button>
+    </div>
+
+    <div class="main">
+        <div id="map"></div>
+        <div class="message">
+            <div id="messages"></div>
+            <div class="send-message">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button onclick="sendMessage()" id="send-message-button" disabled>Send</button>    
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
