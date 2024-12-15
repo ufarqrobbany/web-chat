@@ -26,8 +26,8 @@ function connect() {
         return;
     }
 
-    socket = new WebSocket("ws://174.138.26.104:8080");
-    locationSocket = new WebSocket("ws://139.59.101.121:8080");;
+    socket = new WebSocket("wss://174.138.26.104:8080");
+    locationSocket = new WebSocket("wss://139.59.101.121:8080");;
 
 
     socket.onopen = () => {
